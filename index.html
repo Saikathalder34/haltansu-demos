@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haltansu — Client Demos</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Instrument+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --bg: #F3EDE2;
+            --bg-raised: #FCF9F2;
+            --ink: #1C2025;
+            --muted: #645F55;
+            --accent: #186B4E;
+            --border: #B3A78E;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Instrument Sans', system-ui, sans-serif;
+            background: var(--bg);
+            background-image: radial-gradient(rgba(28, 32, 37, 0.04) 1px, transparent 1px);
+            background-size: 22px 22px;
+            color: var(--ink);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+        }
+
+        .panel { max-width: 560px; width: 100%; }
+
+        .logo {
+            font-family: 'Instrument Serif', Georgia, serif;
+            font-size: 1.6rem;
+            margin-bottom: 8px;
+        }
+
+        .logo span { color: var(--accent); }
+
+        .sub {
+            color: var(--muted);
+            font-size: 0.95rem;
+            margin-bottom: 32px;
+        }
+
+        .demos { border: 1px solid var(--border); background: var(--bg-raised); }
+
+        .demo-row {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            gap: 16px;
+            padding: 22px 24px;
+            border-bottom: 1px solid #DCD3C1;
+            text-decoration: none;
+            color: inherit;
+            transition: background 0.2s ease;
+        }
+
+        .demo-row:last-child { border-bottom: none; }
+
+        .demo-row:hover { background: rgba(24, 107, 78, 0.08); }
+
+        .demo-row:hover .name { color: var(--accent); }
+
+        .name {
+            font-family: 'Instrument Serif', Georgia, serif;
+            font-size: 1.35rem;
+            transition: color 0.2s ease;
+        }
+
+        .meta { font-size: 0.85rem; color: var(--muted); text-align: right; }
+
+        .foot {
+            margin-top: 28px;
+            font-size: 0.85rem;
+            color: var(--muted);
+        }
+
+        .foot a { color: var(--accent); }
+    </style>
+</head>
+
+<body>
+    <div class="panel">
+        <div class="logo">Haltansu<span>.</span> Demos</div>
+        <p class="sub">Preview sites prepared for clients. All content is placeholder until confirmed.</p>
+        <div class="demos">
+            <a class="demo-row" href="/professor/">
+                <span class="name">Professor Portfolio</span>
+                <span class="meta">academic · single page</span>
+            </a>
+            <a class="demo-row" href="/astrologer/">
+                <span class="name">Astrologer Portfolio</span>
+                <span class="meta">celestial · single page</span>
+            </a>
+        </div>
+        <p class="foot">A demo by <a href="https://www.haltansu.com">haltansu.com</a> — want one for your business? <a
+                href="mailto:haltansu.dev@gmail.com">haltansu.dev@gmail.com</a></p>
+    </div>
+</body>
+
+</html>
